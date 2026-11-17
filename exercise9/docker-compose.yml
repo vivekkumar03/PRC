@@ -1,0 +1,15 @@
+services:
+  i2p:
+    image: geti2p/i2p:latest
+    environment:
+      JVM_XMX: 512m
+    ports:
+      - "127.0.0.1:7657:7657"
+      - "127.0.0.1:4444:4444"
+      - "127.0.0.1:7659:7659"
+      - "127.0.0.1:7660:7660"
+    volumes:
+      - i2pconfig:/i2p/.i2p
+
+volumes:
+  i2pconfig:

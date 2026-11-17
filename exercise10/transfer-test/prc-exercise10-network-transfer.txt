@@ -1,0 +1,7 @@
+PRC Exercise 10 - I2P Network Transfer Test
+
+This is a new test file created exclusively on the publisher.
+The recipient should obtain this file through the I2P torrent network.
+
+Test date: 15 November 2026
+Purpose: Verify peer-to-peer file transfer over I2P.

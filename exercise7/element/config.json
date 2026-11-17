@@ -1,0 +1,13 @@
+{
+  "default_server_config": {
+    "m.homeserver": {
+      "base_url": "http://localhost:8008",
+      "server_name": "cr261517.matrix.test"
+    }
+  },
+  "disable_custom_urls": false,
+  "disable_guests": true,
+  "brand": "Element (UAS lab)",
+  "default_country_code": "AT",
+  "show_labs_settings": true
+}

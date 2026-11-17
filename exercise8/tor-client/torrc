@@ -1,0 +1,10 @@
+DataDirectory /var/lib/tor/data
+Log notice stdout
+
+# SOCKS proxy for curl/browsers (published only on 127.0.0.1 of the host)
+SocksPort 0.0.0.0:9050
+SocksPolicy accept *
+
+# Control port inside the container to inspect circuits
+ControlPort 127.0.0.1:9051
+CookieAuthentication 1

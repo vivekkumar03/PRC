@@ -1,0 +1,16 @@
+services:
+  recipient:
+    image: geti2p/i2p:latest
+    environment:
+      JVM_XMX: 256m
+    ports:
+      - "127.0.0.1:7658:7657"
+      - "12346:12345/tcp"
+      - "12346:12345/udp"
+    volumes:
+      - recipient-config:/i2p/.i2p
+      - recipient-downloads:/i2psnark
+
+volumes:
+  recipient-config:
+  recipient-downloads:

@@ -1,0 +1,30 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: onion-web
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+
+  tor-hs:
+    build: ./tor-hs
+    container_name: tor-hs
+    volumes:
+      - hs_keys:/var/lib/tor
+    depends_on: [web]
+    networks:
+      - default
+      - matrixnet      # reach hsA of exercise 7
+
+  tor-client:
+    build: ./tor-client
+    container_name: tor-client
+    ports:
+      - "127.0.0.1:9050:9050"
+
+volumes:
+  hs_keys:
+
+networks:
+  matrixnet:
+    name: exercise7_matrixnet
+    external: true

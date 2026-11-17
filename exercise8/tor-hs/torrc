@@ -1,0 +1,12 @@
+DataDirectory /var/lib/tor/data
+Log notice stdout
+
+# Exercise 8: simple "Hello World" web page
+HiddenServiceDir /var/lib/tor/hs_hello
+HiddenServiceVersion 3
+HiddenServicePort 80 web:80
+
+# Exercise 8: onion service for the Matrix homeserver of exercise 7 (client API)
+HiddenServiceDir /var/lib/tor/hs_matrix
+HiddenServiceVersion 3
+HiddenServicePort 80 hsA:8008

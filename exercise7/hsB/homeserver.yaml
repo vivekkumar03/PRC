@@ -1,0 +1,59 @@
+# Configuration file for Synapse.
+#
+# This is a YAML file: see [1] for a quick introduction. Note in particular
+# that *indentation is important*: all the elements of a list or dictionary
+# should have the same indentation.
+#
+# [1] https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html
+#
+# For more information on how to configure Synapse, including a complete accounting of
+# each option, go to docs/usage/configuration/config_documentation.md or
+# https://element-hq.github.io/synapse/latest/usage/configuration/config_documentation.html
+server_name: "partner.matrix.test"
+pid_file: /data/homeserver.pid
+listeners:
+  - port: 8008
+    resources:
+    - compress: false
+      names:
+      - client
+      - federation
+    tls: false
+    type: http
+    x_forwarded: true
+database:
+  name: sqlite3
+  args:
+    database: /data/homeserver.db
+log_config: "/data/partner.matrix.test.log.config"
+media_store_path: /data/media_store
+registration_shared_secret: "LX_81Z*7*ZcRA1V.U^5@3P9E^1HsXfPu5pf03tfU,a3*~k0sgH"
+report_stats: false
+macaroon_secret_key: "7SRZImuaDOqr;PQhA&_LV5qUZj^+@aAlGodtYxE2zxaO4mFM_&"
+form_secret: "U;UKlifmJQJY.*p@Y1SbUgf8gn~@mUeupYr9VDsvX2Fm#IHjbU"
+signing_key_path: "/data/partner.matrix.test.signing.key"
+trusted_key_servers: []
+
+
+# ---- Exercise 7 customisations ----
+# lab federation: self-signed certs behind nginx, private IPs allowed
+federation_verify_certificates: false
+ip_range_whitelist:
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+  - 10.0.0.0/8
+suppress_key_server_warning: true
+
+# all new rooms are end-to-end encrypted by default
+encryption_enabled_by_default_for_room_type: all
+
+# data retention: min 1 day, max 1 year
+retention:
+  enabled: true
+  default_policy:
+    min_lifetime: 1d
+    max_lifetime: 1y
+  allowed_lifetime_min: 1d
+  allowed_lifetime_max: 1y
+
+# vim:ft=yaml

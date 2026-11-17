@@ -1,0 +1,55 @@
+services:
+  hsA:
+    image: matrixdotorg/synapse:latest
+    container_name: hsA
+    volumes:
+      - ./hsA:/data
+      - ./bridge:/bridge:ro
+    ports:
+      - "8008:8008"
+    networks: [matrixnet]
+
+  # bonus: Matrix <-> IRC bridge
+  heisenbridge:
+    image: hif1/heisenbridge:latest
+    container_name: heisenbridge
+    command: -c /bridge/registration.yaml -l 0.0.0.0 -p 9898 -o @alice:cr261517.matrix.test http://hsA:8008
+    volumes:
+      - ./bridge:/bridge
+    depends_on: [hsA]
+    networks: [matrixnet]
+
+  hsB:
+    image: matrixdotorg/synapse:latest
+    container_name: hsB
+    volumes:
+      - ./hsB:/data
+    ports:
+      - "8009:8008"
+    networks: [matrixnet]
+
+  # TLS front for federation; also answers to both server names inside the network
+  federation-proxy:
+    image: nginx:alpine
+    container_name: federation-proxy
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx:/certs:ro
+    depends_on: [hsA, hsB]
+    networks:
+      matrixnet:
+        aliases:
+          - cr261517.matrix.test
+          - partner.matrix.test
+
+  element:
+    image: vectorim/element-web:latest
+    container_name: element
+    volumes:
+      - ./element/config.json:/app/config.json:ro
+    ports:
+      - "8080:80"
+    networks: [matrixnet]
+
+networks:
+  matrixnet:

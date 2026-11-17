@@ -1,0 +1,20 @@
+# ---- Exercise 7 customisations ----
+# lab federation: self-signed certs behind nginx, private IPs allowed
+federation_verify_certificates: false
+ip_range_whitelist:
+  - 172.16.0.0/12
+  - 192.168.0.0/16
+  - 10.0.0.0/8
+suppress_key_server_warning: true
+
+# all new rooms are end-to-end encrypted by default
+encryption_enabled_by_default_for_room_type: all
+
+# data retention: min 1 day, max 1 year
+retention:
+  enabled: true
+  default_policy:
+    min_lifetime: 1d
+    max_lifetime: 1y
+  allowed_lifetime_min: 1d
+  allowed_lifetime_max: 1y
