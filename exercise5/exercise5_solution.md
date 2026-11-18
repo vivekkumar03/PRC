@@ -1,5 +1,7 @@
 # Exercise 5: Consent under the GDPR
 
+[View Exercise 5 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise5)
+
 ## Conditions for valid consent
 
 Under GDPR Articles 4(11), 6(1)(a) and 7, consent must be **freely given,

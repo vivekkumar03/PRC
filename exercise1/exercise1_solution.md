@@ -1,5 +1,7 @@
 # Exercise 1 – Hiding a text in an image
 
+[View Exercise 1 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise1)
+
 **Task:** Hide a text of your choice in an image, attach the image (not embedded), screenshot the source of the image showing the text, and explain why hiding data in an image is possible.
 
 ## Files

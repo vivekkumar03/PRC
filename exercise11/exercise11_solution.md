@@ -1,5 +1,7 @@
 # Exercise 11: Lightbeam and Privacy Badger
 
+[View Exercise 11 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise11)
+
 ## Method
 
 On 14 November 2026 I visited [BBC News](https://www.bbc.com/news) in a

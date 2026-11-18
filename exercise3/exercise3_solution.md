@@ -1,5 +1,7 @@
 # Exercise 3: RSA Encryption
 
+[View Exercise 3 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise3)
+
 ## Problem
 
 Use the supplied RSA key pair to encrypt the integer message `99`. Show the calculation steps and intermediate results, explain how to handle the public and private keys, and describe which key is used for encryption, decryption, signing, and verification.

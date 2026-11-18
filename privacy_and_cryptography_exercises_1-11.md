@@ -1,5 +1,7 @@
 # Exercise 1 – Hiding a text in an image
 
+[View Exercise 1 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise1)
+
 **Task:** Hide a text of your choice in an image, attach the image (not embedded), screenshot the source of the image showing the text, and explain why hiding data in an image is possible.
 
 ## Files
@@ -103,6 +105,8 @@ Because the image looks unchanged, the existence of the message is hidden (stega
 ---
 
 # Exercise 2: One round of AES-128
+
+[View Exercise 2 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise2)
 
 The plaintext is `buy me some potato chips please` and the key is
 `keys are boring1`. Both are encoded as ASCII/UTF-8; the 16-byte key therefore
@@ -233,6 +237,8 @@ Source: [NIST FIPS 197: Advanced Encryption Standard](https://csrc.nist.gov/pubs
 
 # Exercise 3: RSA Encryption
 
+[View Exercise 3 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise3)
+
 ## Problem
 
 Use the supplied RSA key pair to encrypt the integer message `99`. Show the calculation steps and intermediate results, explain how to handle the public and private keys, and describe which key is used for encryption, decryption, signing, and verification.
@@ -362,6 +368,8 @@ These tiny values demonstrate the RSA calculation only; they are not secure. Rea
 
 # Exercise 4: European eID and trust architecture
 
+[View Exercise 4 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise4)
+
 The European eIDAS framework does not replace national identity schemes with
 one universal identity provider. Member States notify their own schemes and,
 subject to the regulation's conditions, recognise eligible notified schemes
@@ -396,6 +404,8 @@ not a claim that one compromised service can never affect other countries.
 ---
 
 # Exercise 5: Consent under the GDPR
+
+[View Exercise 5 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise5)
 
 ## Conditions for valid consent
 
@@ -457,6 +467,8 @@ consent for non-essential cookies.
 
 # Exercise 6: Metadata, Privacy, and IPsec
 
+[View Exercise 6 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise6)
+
 ## What Is Metadata?
 
 Metadata is information about a communication rather than the communication's main content. Network metadata can include source and destination IP addresses, time and duration, packet size, frequency, volume, and sometimes ports or location-related information. For example, an observer might not be able to read an encrypted message but may still see which network endpoints exchanged traffic and when.
@@ -499,6 +511,8 @@ Metadata is useful for operating networks, providing services, and investigating
 ---
 
 # Exercise 7 – Matrix server, federation, E2E, retention, bridge
+
+[View Exercise 7 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise7)
 
 **Task:** Run a Matrix server on a local domain containing the UAS ID, get chat and file sharing working, federate with a partner, document a chatroom with users from two homeservers, set retention (min 1 day, max 1 year) and E2E by default for new rooms, run the web client (Docker), bonus: a bridge.
 
@@ -619,6 +633,8 @@ The bridge responded. Connecting to an actual IRC network (`OPEN libera`) was no
 ---
 
 # Exercise 8 – Tor onion service
+
+[View Exercise 8 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise8)
 
 **Task:** Create an onion service with Tor and access it (Hello World page); create a hidden service for the Matrix server; document it; which browser and why; show circuits for clearnet vs. hidden service and explain the difference; find news sites/public services with onion services.
 
@@ -741,6 +757,8 @@ The uploaded screenshots show Tor Browser accessing the Hello World and BBC onio
 
 # Exercise 9 – I2P Email and OpenPGP
 
+[View Exercise 9 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise9)
+
 **Privacy and Cryptography · 15 November 2026**
 
 ## Objective
@@ -828,6 +846,8 @@ with a different circuit.
 ---
 
 # Exercise 10: I2P Torrenting and Privacy
+
+[View Exercise 10 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise10)
 
 **Privacy and Cryptography · 15 November 2026**
 
@@ -979,6 +999,8 @@ The practical result is supported by two independent observations: Exercise 10 I
 ---
 
 # Exercise 11: Lightbeam and Privacy Badger
+
+[View Exercise 11 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise11)
 
 ## Method
 

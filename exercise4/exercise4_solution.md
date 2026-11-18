@@ -1,5 +1,7 @@
 # Exercise 4: European eID and trust architecture
 
+[View Exercise 4 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise4)
+
 The European eIDAS framework does not replace national identity schemes with
 one universal identity provider. Member States notify their own schemes and,
 subject to the regulation's conditions, recognise eligible notified schemes

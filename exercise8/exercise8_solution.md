@@ -1,5 +1,7 @@
 # Exercise 8 – Tor onion service
 
+[View Exercise 8 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise8)
+
 **Task:** Create an onion service with Tor and access it (Hello World page); create a hidden service for the Matrix server; document it; which browser and why; show circuits for clearnet vs. hidden service and explain the difference; find news sites/public services with onion services.
 
 ## Setup (Docker, all files in this folder)

@@ -1,5 +1,7 @@
 # Exercise 6: Metadata, Privacy, and IPsec
 
+[View Exercise 6 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise6)
+
 ## What Is Metadata?
 
 Metadata is information about a communication rather than the communication's main content. Network metadata can include source and destination IP addresses, time and duration, packet size, frequency, volume, and sometimes ports or location-related information. For example, an observer might not be able to read an encrypted message but may still see which network endpoints exchanged traffic and when.

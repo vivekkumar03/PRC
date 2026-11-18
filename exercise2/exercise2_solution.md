@@ -1,5 +1,7 @@
 # Exercise 2: One round of AES-128
 
+[View Exercise 2 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise2)
+
 The plaintext is `buy me some potato chips please` and the key is
 `keys are boring1`. Both are encoded as ASCII/UTF-8; the 16-byte key therefore
 selects AES-128. The first 16-byte plaintext block is `buy me some pota`.

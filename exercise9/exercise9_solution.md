@@ -1,5 +1,7 @@
 # Exercise 9 – I2P Email and OpenPGP
 
+[View Exercise 9 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise9)
+
 **Privacy and Cryptography · 15 November 2026**
 
 ## Objective

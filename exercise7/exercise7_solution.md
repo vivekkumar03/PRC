@@ -1,5 +1,7 @@
 # Exercise 7 – Matrix server, federation, E2E, retention, bridge
 
+[View Exercise 7 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise7)
+
 **Task:** Run a Matrix server on a local domain containing the UAS ID, get chat and file sharing working, federate with a partner, document a chatroom with users from two homeservers, set retention (min 1 day, max 1 year) and E2E by default for new rooms, run the web client (Docker), bonus: a bridge.
 
 **Limitations:** The second homeserver is a local simulation, not an independent partner. The API test used plaintext message events; an encrypted Element message and a real partner exchange were not verified. The lab configuration is not secure for public deployment.

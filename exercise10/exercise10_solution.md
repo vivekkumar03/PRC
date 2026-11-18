@@ -1,5 +1,7 @@
 # Exercise 10: I2P Torrenting and Privacy
 
+[View Exercise 10 on GitHub](https://github.com/vivekkumar03/PRC/tree/main/exercise10)
+
 **Privacy and Cryptography · 15 November 2026**
 
 ## Objective
